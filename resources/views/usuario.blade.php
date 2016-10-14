@@ -71,7 +71,7 @@
         <div class="comment-top">
       <!---->
               <div class="panel-body">
-                  <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}" enctype="multipart/form-data">
+                  <form class="form-horizontal" role="form" method="POST" action="{{ url('user/register') }}" enctype="multipart/form-data">
                       {{ csrf_field() }}
                       <input type="hidden" name="_token" value="{{ csrf_token() }}">
 

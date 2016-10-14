@@ -94,4 +94,12 @@ class UserController extends Controller
       Auth::logout();
       return view('welcome');
     }
+
+    public function sendEmailReminder(Request $request, $id)
+    {
+        $user = User::findOrFail($id);
+
+        Mail::to($user->email, $user->nome)->subject('GO2FUN - Lembrar email!')->send(new ConfirmationRegister($user));
+      
+    }
 }

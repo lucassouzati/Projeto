@@ -41,7 +41,7 @@
 
                     <div class="">
                       <h2>Categoria: <small>{!!$evento->descricaoCategoria !!}</small></h2>
-
+                    </div>
                     <div class="">
                       <h2>SubCategoria: <small>{!!$evento->descricaosubcat !!}</small></h2>
                     </div>

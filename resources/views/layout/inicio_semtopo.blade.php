@@ -2,13 +2,15 @@
 <html>
 <head>
 <title>GO2FUN </title>
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery.min.js"></script>
+<script src="/js/jquery.min.js"></script>
 <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 <!-- Custom Theme files -->
 <!--theme-style-->
-<link href="css/style_home2.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/css/style_home2.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/css/bootstrapValidator.min.css"/>
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/js/bootstrapValidator.min.js"> </script>
 <!--//theme-style-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -23,7 +25,7 @@
 					<h1><a href="{{ url('/')}}">GO2FUN</a></h1>
 				</div>
 				<div class="top-nav">
-					<span class="menu"><img src="images/menu.png" alt=""> </span>
+					<span class="menu"><img src="/images/menu.png" alt=""> </span>
 					<ul>
 						<li ><a href="{{ url('/')}}" class="hvr-sweep-to-bottom color"><i class="fa fa-home"></i>Início  </a> </li>
 						<li ><a href="{{ url('/about')}}" class="hvr-sweep-to-bottom color1"><i class="fa fa-question"></i>Sobre  </a> </li>

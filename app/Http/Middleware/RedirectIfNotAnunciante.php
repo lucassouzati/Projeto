@@ -19,9 +19,10 @@ class RedirectIfNotAnunciante
 
 	public function handle($request, Closure $next, $guard = 'anunciante')
 	{
-
+		var_dump(Auth::guard($guard)->check());
+		exit();
 	    if (!Auth::guard($guard)->check()) {
-	        return redirect('anunciante/login');
+	        return redirect('/anunc');
 	    }
 
 	    return $next($request);

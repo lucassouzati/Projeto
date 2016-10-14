@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4e846f1502d8180e4c9694d52aec6e7f",
-    "content-hash": "a25d6f086eee389ebc5a8cf5192a35d0",
+    "hash": "8ad0eb43036c7bdb34c85cc9f946cc96",
+    "content-hash": "17277ccf82eef8b83310bb61b01dbdab",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -60,6 +60,56 @@
                 "preload"
             ],
             "time": "2015-11-09 22:51:51"
+        },
+        {
+            "name": "cornford/googlmapper",
+            "version": "v2.16.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bradcornford/Googlmapper.git",
+                "reference": "8e8eb9235e7ea829687d32c99241846abc50a218"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bradcornford/Googlmapper/zipball/8e8eb9235e7ea829687d32c99241846abc50a218",
+                "reference": "8e8eb9235e7ea829687d32c99241846abc50a218",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "5.*",
+                "illuminate/view": "5.*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.1",
+                "phpspec/phpspec": "2.0.*@dev"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Cornford\\Googlmapper": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bradley Cornford",
+                    "email": "me@bradleycornford.co.uk"
+                }
+            ],
+            "description": "An easy way to integrate Google Maps with Laravel.",
+            "keywords": [
+                "google",
+                "laravel",
+                "map",
+                "mapping",
+                "maps",
+                "streetview"
+            ],
+            "time": "2016-09-22 13:04:44"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -160,84 +210,6 @@
                 "string"
             ],
             "time": "2015-11-06 14:35:42"
-        },
-        {
-            "name": "hesto/core",
-            "version": "v1.0.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Hesto/core.git",
-                "reference": "1e194b269d198b730d20e4243620ca23ac006c9b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Hesto/core/zipball/1e194b269d198b730d20e4243620ca23ac006c9b",
-                "reference": "1e194b269d198b730d20e4243620ca23ac006c9b",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.5.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Hesto\\Core\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Hesto",
-                    "email": "losiakp@gmail.com"
-                }
-            ],
-            "description": "Core classes for my other modules",
-            "time": "2016-09-09 13:25:24"
-        },
-        {
-            "name": "hesto/multi-auth",
-            "version": "v1.0.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Hesto/multi-auth.git",
-                "reference": "3dcd4869339031b8473095195634ddd15d2f2fc7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Hesto/multi-auth/zipball/3dcd4869339031b8473095195634ddd15d2f2fc7",
-                "reference": "3dcd4869339031b8473095195634ddd15d2f2fc7",
-                "shasum": ""
-            },
-            "require": {
-                "hesto/core": ">=1.0.3",
-                "php": ">=5.5.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Hesto\\MultiAuth\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Hesto",
-                    "email": "losiakp@gmail.com"
-                }
-            ],
-            "description": "Multi Auth for Laravel 5.3",
-            "keywords": [
-                "auth",
-                "laravel",
-                "multi"
-            ],
-            "time": "2016-09-09 07:55:54"
         },
         {
             "name": "jakub-onderka/php-console-color",
@@ -2093,6 +2065,84 @@
             "time": "2015-05-11 14:41:42"
         },
         {
+            "name": "hesto/core",
+            "version": "v1.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Hesto/core.git",
+                "reference": "1e194b269d198b730d20e4243620ca23ac006c9b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Hesto/core/zipball/1e194b269d198b730d20e4243620ca23ac006c9b",
+                "reference": "1e194b269d198b730d20e4243620ca23ac006c9b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Hesto\\Core\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hesto",
+                    "email": "losiakp@gmail.com"
+                }
+            ],
+            "description": "Core classes for my other modules",
+            "time": "2016-09-09 13:25:24"
+        },
+        {
+            "name": "hesto/multi-auth",
+            "version": "v1.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Hesto/multi-auth.git",
+                "reference": "3dcd4869339031b8473095195634ddd15d2f2fc7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Hesto/multi-auth/zipball/3dcd4869339031b8473095195634ddd15d2f2fc7",
+                "reference": "3dcd4869339031b8473095195634ddd15d2f2fc7",
+                "shasum": ""
+            },
+            "require": {
+                "hesto/core": ">=1.0.3",
+                "php": ">=5.5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Hesto\\MultiAuth\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hesto",
+                    "email": "losiakp@gmail.com"
+                }
+            ],
+            "description": "Multi Auth for Laravel 5.3",
+            "keywords": [
+                "auth",
+                "laravel",
+                "multi"
+            ],
+            "time": "2016-09-09 07:55:54"
+        },
+        {
             "name": "mockery/mockery",
             "version": "0.9.5",
             "source": {
@@ -3515,8 +3565,6 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": {
-        "php": ">=5.6.4"
-    },
+    "platform": [],
     "platform-dev": []
 }

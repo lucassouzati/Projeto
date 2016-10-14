@@ -8,17 +8,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>GO2FUN - ADMIN | </title>
-
+  <script src="/js/jquery.min.js"></script>
   <link href="/css/bootstrap.min.css" rel="stylesheet">
-
   <link href="/fonts/css/font-awesome.min.css" rel="stylesheet">
   <link href="/css/animate.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/css/bootstrap-select.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/bootstrap-select.min.js"></script>
   <link href="/css/custom.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/css/maps/jquery-jvectormap-2.0.3.css" />
   <link href="/css/icheck/flat/green.css" rel="stylesheet" />
   <link href="/css/floatexamples.css" rel="stylesheet" type="text/css" />
 
-  <script src="/js/jquery.min.js"></script>
   <script src="/js/nprogress.js"></script>
 
 </head>
@@ -75,26 +75,8 @@
                 </li>
               </ul>
             </div>
-
           </div>
           <!-- /sidebar menu -->
-
-          <!-- /menu footer buttons -->
-          <div class="sidebar-footer hidden-small">
-            <a data-toggle="tooltip" data-placement="top" title="Settings">
-              <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
-            </a>
-            <a data-toggle="tooltip" data-placement="top" title="FullScreen">
-              <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
-            </a>
-            <a data-toggle="tooltip" data-placement="top" title="Lock">
-              <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
-            </a>
-            <a data-toggle="tooltip" data-placement="top" title="Logout">
-              <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
-            </a>
-          </div>
-          <!-- /menu footer buttons -->
         </div>
       </div>
 
@@ -194,6 +176,8 @@
           <!-- bootstrap progress js -->
           <script src="/js/progressbar/bootstrap-progressbar.min.js"></script>
           <script src="/js/nicescroll/jquery.nicescroll.min.js"></script>
+          <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/css/bootstrapValidator.min.css"/>
+          <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/js/bootstrapValidator.min.js"> </script>
           <!-- icheck -->
           <script src="/js/icheck/icheck.min.js"></script>
           <!-- daterangepicker -->
@@ -201,8 +185,10 @@
           <script type="text/javascript" src="/js/datepicker/daterangepicker.js"></script>
           <!-- chart js -->
           <script src="/js/chartjs/chart.min.js"></script>
-
           <script src="/js/custom.js"></script>
+          <script src="/js/moris/raphael-min.js"></script>
+          <script src="/js/moris/morris.min.js"></script>
+          <script src="/js/moris/example.js"></script>
 
           <!-- flot js -->
           <!--[if lte IE 8]><script type="text/javascript" src="js/excanvas.min.js"></script><![endif]-->
@@ -345,20 +331,16 @@
 
             var data = {
               labels: [
-                "Symbian",
-                "Blackberry",
-                "Other",
-                "Android",
-                "IOS"
+                "Até 18",
+                "De 19 a 25",
+                "Acima de 26",
               ],
               datasets: [{
-                data: [15, 20, 30, 10, 30],
+                data: [15, 20, 30],
                 backgroundColor: [
                   "#BDC3C7",
                   "#9B59B6",
                   "#455C73",
-                  "#26B99A",
-                  "#3498DB"
                 ],
                 hoverBackgroundColor: [
                   "#CFD4D8",
@@ -391,8 +373,8 @@
               var optionSet1 = {
                 startDate: moment().subtract(29, 'days'),
                 endDate: moment(),
-                minDate: '01/01/2012',
-                maxDate: '12/31/2020',
+                minDate: '01/01/2015s',
+                maxDate: '12/31/2050',
                 dateLimit: {
                   days: 60
                 },

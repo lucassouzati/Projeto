@@ -54,120 +54,31 @@
         <!-- /top tiles -->
 
         <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="dashboard_graph">
-
-              <div class="row x_title">
-                <div class="col-md-12">
-                  <h3>Visualizações <small> Último evento cadastrado.</small></h3>
-              </div>
-
-              <div class="col-md-12 col-sm-12 col-xs-12">
-                <div id="placeholder33" style="height: 260px; display: none" class="demo-placeholder"></div>
-                <div style="width: 100%;">
-                  <div id="canvas_dahs" class="demo-placeholder" style="width: 100%; height:270px;"></div>
-                </div>
-              </div>
-
-              </div>
-          </div>
-
-        </div>
-        <br />
-
-        <div class="row">
-
-
           <div class="col-md-6 col-sm-6 col-xs-12">
             <div class="x_panel tile fixed_height_320">
               <div class="x_title">
-                <h2>App Versions</h2>
+                <h2>Últimos eventos</h2>
                 <div class="clearfix"></div>
               </div>
               <div class="x_content">
-                <h4>App Usage across versions</h4>
+                <h4>Total Confirmados por evento</h4>
+                <?php foreach ($detalhes as $detalhes): ?>
                 <div class="widget_summary">
                   <div class="w_left w_25">
-                    <span>0.1.5.2</span>
+                    <span>{!!$detalhes->nome!!}</span>
                   </div>
                   <div class="w_center w_55">
                     <div class="progress">
-                      <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 66%;">
-                        <span class="sr-only">60% Complete</span>
+                      <div class="progress-bar bg-green" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: {!!$detalhes->total_conf!!}%;">
                       </div>
                     </div>
                   </div>
                   <div class="w_right w_20">
-                    <span>123k</span>
+                    <span>{!!$detalhes->total_conf!!}</span>
                   </div>
                   <div class="clearfix"></div>
                 </div>
-
-                <div class="widget_summary">
-                  <div class="w_left w_25">
-                    <span>0.1.5.3</span>
-                  </div>
-                  <div class="w_center w_55">
-                    <div class="progress">
-                      <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 45%;">
-                        <span class="sr-only">60% Complete</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="w_right w_20">
-                    <span>53k</span>
-                  </div>
-                  <div class="clearfix"></div>
-                </div>
-                <div class="widget_summary">
-                  <div class="w_left w_25">
-                    <span>0.1.5.4</span>
-                  </div>
-                  <div class="w_center w_55">
-                    <div class="progress">
-                      <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 25%;">
-                        <span class="sr-only">60% Complete</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="w_right w_20">
-                    <span>23k</span>
-                  </div>
-                  <div class="clearfix"></div>
-                </div>
-                <div class="widget_summary">
-                  <div class="w_left w_25">
-                    <span>0.1.5.5</span>
-                  </div>
-                  <div class="w_center w_55">
-                    <div class="progress">
-                      <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 5%;">
-                        <span class="sr-only">60% Complete</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="w_right w_20">
-                    <span>3k</span>
-                  </div>
-                  <div class="clearfix"></div>
-                </div>
-                <div class="widget_summary">
-                  <div class="w_left w_25">
-                    <span>0.1.5.6</span>
-                  </div>
-                  <div class="w_center w_55">
-                    <div class="progress">
-                      <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 2%;">
-                        <span class="sr-only">60% Complete</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="w_right w_20">
-                    <span>1k</span>
-                  </div>
-                  <div class="clearfix"></div>
-                </div>
-
+                <?php endforeach; ?>
               </div>
             </div>
           </div>
@@ -203,34 +114,20 @@
                       <table class="tile_info">
                         <tr>
                           <td>
-                            <p><i class="fa fa-square blue"></i>At� 10 anos </p>
+                            <p><i class="fa fa-square blue"></i>Até 18 anos</p>
                           </td>
-                          <td>30%</td>
                         </tr>
                         <tr>
                           <td>
-                            <p><i class="fa fa-square green"></i>Entre 10 e 20 anos </p>
+                            <p><i class="fa fa-square green"></i>Entre 19 e 30 anos </p>
                           </td>
-                          <td>10%</td>
                         </tr>
                         <tr>
                           <td>
-                            <p><i class="fa fa-square purple"></i>Entre 20 e 35 anos </p>
+                            <p><i class="fa fa-square purple"></i>Acima de 30 </p>
                           </td>
-                          <td>20%</td>
                         </tr>
-                        <tr>
-                          <td>
-                            <p><i class="fa fa-square aero"></i>Entre 35 e 50 anos </p>
-                          </td>
-                          <td>15%</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <p><i class="fa fa-square red"></i>Acima de 50 anos </p>
-                          </td>
-                          <td>30%</td>
-                        </tr>
+
                       </table>
                     </td>
                   </tr>
@@ -238,16 +135,13 @@
               </div>
             </div>
           </div>
-
-		 </div>
-              </div>
-            </div>
+		      </div>
           </div>
-
-
-
-            </div>
-
+          </div>
           </div>
         </div>
+        </div>
+        </div>
+
+
 @endsection

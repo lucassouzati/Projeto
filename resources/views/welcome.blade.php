@@ -8,7 +8,7 @@
 		<div class="content-top">
 			<div class="col-md-7 content-top1">
 				<h3>Bem-vindo</h3>
-				<div class="col-12 font-thin"><span class="font-semibold">GO2FUN</span>, o único que te ajuda decidir onde ir com base em suas preferências.</div>
+				<p><i>GO2FUN, o único que te ajuda decidir onde ir com base em suas preferências.</i></p>
 				<p>Não importa sua preferência: seja um barzinho na sexta-feira à noite para ir com os amigos, ou um rodízio de churros para levar a família no domingo.
 					Tenha acesso à todos, de maneira simples e rápida. Com filtros rápidos e inteligentes, painel personalizado, esteja sempre por dentro dos melhores eventos.
 					<p align="center"> Isto é o que nós fazemos de melhor.
@@ -198,9 +198,12 @@
 		<div class="container">
 			<div class="content-bottom-top">
 				<div class="col-md-6 content-bottom-top1">
-					<h3>texto a decidir</h3>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-						Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia</p>
+					<h3>Diversão também é saúde!</h3>
+					<p>"A inatividade é um risco para a saúde. As pessoas que, por várias circunstâncias pessoais, familiares ou sociais, se encontram sem ocupações, não saem,
+					não se divertem, são pessoas com uma alarmante falta de vitalidade, eles têm poucos recursos pessoais para explorar cabalmente sua vida plena.
+					<p>Isso não significa que você deve estar de segunda a segunda na balada, mas acredita-se que aliviar a tensão do dia-a-dia ajuda manter o equilíbrio emocional.
+					Obviamente, cada pessoa possui uma preferência para se distrair: seja um barzinho com amigos, festival de comida com a família ou uma peça teatral sozinho.
+					O importante é aliviar o estresse! <p>Com o <b>GO2FUN</b> você consegue encontrar o destino certo de forma prática e rápida. Experimente!"</p>
 				</div>
 				<div class="col-md-6 bottom-co1">
 					<img class="img-responsive" src="images/3.jpg" alt="">

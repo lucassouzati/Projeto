@@ -25,7 +25,7 @@
 				<div class="top-nav">
 					<span class="menu"><img src="images/menu.png" alt=""> </span>
 					<ul>
-						<li ><a href="{{ url('/')}}" class="hvr-sweep-to-bottom color"><i class="fa fa-home"></i>Início  </a> </li>
+						<li ><a href="{{ url('/')}}" class="hvr-sweep-to-bottom color"><i class="fa fa-home"></i>Início  </a></li>
 						<li ><a href="{{ url('/about')}}" class="hvr-sweep-to-bottom color1"><i class="fa fa-question"></i>Sobre  </a> </li>
 						<li><a href="{{ url('/user')}}"  class="hvr-sweep-to-bottom color2"><i class="fa fa-user"></i>Usuário</a></li>
 						<li><a href="{{ url('/anunc')}}" class="hvr-sweep-to-bottom color3"><i class="fa fa-user-secret"></i>Anunciante </a></li>
@@ -102,5 +102,6 @@
   	</div>
   </div>
   <!--//footer-->
+
   </body>
   </html>

@@ -19,18 +19,14 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/bootstrap-select.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/i18n/defaults-*.min.js"></script>
       <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-      <script src="http://maps.google.com/maps/api/js"></script>
-      <script src="/js/gmaps.js"></script>
       <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
       <link href="/css/awesome/font-awesome.css" rel="stylesheet">
       <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
       <link rel="stylesheet" href="/assets/gallery/blueimp-gallery.min.css">
   		<meta name="viewport" content="width=device-width, initial-scale=1.0">
   		<link rel="stylesheet" type="text/css" href="/css/isotope.css" media="screen" />
-  		<link href="/css/responsive-slider.css" rel="stylesheet">
   		<link rel="stylesheet" href="/css/animate.css">
       <link rel="stylesheet" href="/css/style.css">
-  		<link rel="stylesheet" href="/css/awesome/font-awesome.min.css">
       <link rel="stylesheet" href="/assets/animate/animate.css" />
       <link rel="stylesheet" href="/assets/animate/set.css" />
       <link href="/css/animate.min.css" rel="stylesheet">
@@ -70,9 +66,9 @@
                 <ul class="dropdown-menu dropdown-usermenu animated fadeInDown pull-right">
                   </li>
                   <li>
-                    <a href="{{ URL('/profile')}}">Perfil</a>
+                    <a href="{{ URL('user/profile')}}">Perfil</a>
                   </li>
-                  <li><a href="{{url('/logout')}}"><i class="fa fa-sign-out pull-right"></i> SAIR</a>
+                  <li><a href="{{url('user/logout')}}"><i class="fa fa-sign-out pull-right"></i> SAIR</a>
                   </li>
                 </ul>
               </li>
@@ -451,7 +447,7 @@
         document.getElementById(el).style.display = 'none';
 }
   </script>
-  
+
 </div>
 </body>
 </html>

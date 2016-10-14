@@ -7,7 +7,7 @@
 		<div class="container">
 				<div class="col-md-9">
 					<div class="blog-grid">
-					<img class="img-responsive" src="images/b4.png" alt="" />
+					<img class="img-responsive" src="/images/b4.png" alt="" />
 					<div class="row line-row">
 						<div class="hr">&nbsp;</div>
 					</div>

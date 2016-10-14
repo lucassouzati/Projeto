@@ -1,5 +1,5 @@
 <?php
-
-Route::get('/home', 'AnuncianteAuth\LoginController@index');
+//Anunciante Login
+Route::get('/logout', 'AnuncianteAuth\LoginController@logout');
+Route::get('/home', 'Anunciantes@index');
 Route::get('/register_event', 'Anunciantes@novoEvento');
-Route::get('/ger_event', 'Anunciantes@novoEvento');

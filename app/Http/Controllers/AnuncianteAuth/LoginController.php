@@ -8,6 +8,8 @@ use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
+  use AuthenticatesUsers;
+
     /*
     |--------------------------------------------------------------------------
     | Login Controller
@@ -17,26 +19,9 @@ class LoginController extends Controller
     | redirecting them to your home screen. The controller uses a trait
     | to conveniently provide its functionality to your applications.
     |
-    */  public function index(){
-        $id = (Auth::guard('anunciante')->user()->idanunciante);
-        $total = DB::table('eventos')
-            ->where('eventos.idanunciante','=',$id)
-            ->count();
-        $conf = DB::table('confirmados')
-        ->where('confirmados.id_anunciante','=',$id)
-        ->count();
-        return view('anunciante.home')->with('total', $total)->with('conf', $conf);
+    */
 
-      }
-
-    use AuthenticatesUsers;
-
-    /**
-     * Where to redirect users after login / registration.
-     *
-     * @var string
-     */
-    public $redirectTo = '/anunciante/home';
+    public $redirectTo = 'anunciante/home';
 
     /**
      * Create a new controller instance.

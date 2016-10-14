@@ -5,7 +5,7 @@
   <div class="container">
       <div class="col-md-12">
         <div class="blog-grid">
-        <img class="img-responsive" src="images/b1.jpg" alt="" />
+        <img class="img-responsive" src="/images/b1.jpg" alt="" />
         <div class="lone-line">
           <p>
             <div class="clearfix"> </div>
@@ -22,7 +22,7 @@
         <div class="comment-top">
       <!---->
               <div class="panel-body">
-                  <form class="form-horizontal" role="form" method="POST" action="{{ url('user/register') }}" files="true" enctype="multipart/form-data">
+                  <form class="form-horizontal" id="contactForm"role="form" method="POST" action="{{ url('user/register') }}" files="true" enctype="multipart/form-data">
                       {{ csrf_field() }}
 
                       <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
@@ -168,7 +168,6 @@
                             <label class="checkbox-inline"><input type="checkbox" name="news" value="1">Aceito receber e-mails de notificação.</label>
                           </div>
                       </div>
-
 
                       <div class="form-group">
                           <div class="col-md-6 col-md-offset-4">

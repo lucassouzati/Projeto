@@ -69,9 +69,9 @@
                 <ul class="dropdown-menu dropdown-usermenu animated fadeInDown pull-right">
                   </li>
                   <li>
-                    <a href="{{ URL('/profile')}}">Perfil</a>
+                    <a href="{{ URL('user/profile')}}">Perfil</a>
                   </li>
-                  <li><a href="{{url('/logout')}}"><i class="fa fa-sign-out pull-right"></i> SAIR</a>
+                  <li><a href="{{url('user/logout')}}"><i class="fa fa-sign-out pull-right"></i> SAIR</a>
                   </li>
                 </ul>
               </li>

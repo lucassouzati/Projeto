@@ -15,7 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/profile', 'UserController@Profile');
 Route::get('/change', 'UserController@Alterar');
 Route::get('/user', function(){
   return view('usuario');
@@ -32,10 +31,6 @@ Route::get('/logout', 'UserController@sair');
 Route::get('/confirmed', 'UserController@Confirmed');
 Route::get('/home', 'HomeController@index');
 
-//Anunciante Login
-Route::get('anunciante/logout', 'AnuncianteAuth\LoginController@logout');
-Route::post('anunciante/home', 'Anunciantes@login');
-
 //Anunciante Register
 Route::get('anunciante/register', 'AnuncianteAuth\RegisterController@showRegistrationForm');
 Route::post('anunciante/register', 'AnuncianteAuth\RegisterController@register');
@@ -45,8 +40,7 @@ Route::post('anunciante/password/email', 'AnuncianteAuth\ForgotPasswordControlle
 Route::post('anunciante/password/reset', 'AnuncianteAuth\ResetPasswordController@reset');
 Route::get('anunciante/password/reset', 'AnuncianteAuth\ForgotPasswordController@showLinkRequestForm');
 Route::get('anunciante/password/reset/{token}', 'AnuncianteAuth\ResetPasswordController@showResetForm');
-
-
+Route::post('anunciante/home', 'AnuncianteAuth\LoginController@login');
 //User Login
 Route::get('user/login', 'UserAuth\LoginController@showLoginForm');
 Route::post('user/login', 'UserAuth\LoginController@login');
